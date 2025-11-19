@@ -52,7 +52,7 @@ def webhook():
             address = parts[1]
             try:
                 balance = get_balance(address)
-                send_message(chat_id, f"💰 Balance of {address}:\n{balance:.6f} ETH")
+                send_message(chat_id, f"Balance of {address}:\n{balance:.6f} ETH")
             except Exception as e:
                 send_message(chat_id, f"Error fetching balance:\n{e}")
 
